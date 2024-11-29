@@ -85,4 +85,105 @@ print(result)'''
 
 result = [f'{x} is even' if x%2 == 0 else f'{x} is odd' for x in numb]
 
-print(result)'''
+print(result)
+
+
+x = {x**2 for x in range(1,5)}
+
+print(x)
+
+
+ls = [1,2,3,4,10]
+
+s = {x**2 for x in ls}
+
+print(s)
+
+ls = [1,2,3,4,4,5,2,]
+
+s = {int(x) for x in ls}
+
+print(s)
+
+import time
+start = time.time() 
+
+print(start)
+
+import time
+
+start = time.time() 
+
+s = {x**2 for x in range(10000)}
+
+finish = time.time()
+
+print(finish - start)
+import time
+start_for = time.time()
+ls = []
+for n in range(1000) :
+    ls.append(n**2)
+    finish_for = time.time()
+    print(finish_for - start_for)
+
+
+di = {
+    'gela' : 3,
+    'nugzari' : 2,
+    'jemali' : 1,
+    'madulo' : 4,
+    'zaka' : 5
+}
+
+dict_transf = {x for x in di}
+
+print(dict_transf)
+
+di = {
+    'gela' : 3,
+    'nugzari' : 2,
+    'jemali' : 1,
+    'madulo' : 4,
+    'zaka' : 5
+}
+
+dict_transf = di.items()
+
+print(dict_transf)
+
+di = {
+    'gela' : 3,
+    'nugzari' : 2,
+    'jemali' : 1,
+    'madulo' : 4,
+    'zaka' : 5
+}
+
+dict_transf = {key.upper() : value for key,value in di.items()}
+
+print(dict_transf)
+
+ls = [10,11,12,13,14]
+
+ite = iter(ls)
+
+print(next(ite))
+print(next(ite))
+print(next(ite))
+print(next(ite))
+print(next(ite))'''
+
+
+ls = [10,11,12,13,14]
+
+gen = (x**2 for x in ls)
+
+print(next(gen))
+
+
+
+
+
+
+
